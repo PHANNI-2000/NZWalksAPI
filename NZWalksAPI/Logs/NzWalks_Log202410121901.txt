@@ -1,0 +1,40 @@
+2024-10-12 19:01:39.801 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-12 19:01:40.153 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - null null
+2024-10-12 19:01:40.235 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-12 19:01:40.236 +07:00 [INF] Hosting environment: Development
+2024-10-12 19:01:40.236 +07:00 [INF] Content root path: D:\LUCIFER\PSU\COURSE UDEMY\RESTful Web API\NZWalks\NZWalksAPI
+2024-10-12 19:01:40.527 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - 200 null text/html;charset=utf-8 380.81ms
+2024-10-12 19:01:40.585 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - null null
+2024-10-12 19:01:40.585 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-12 19:01:40.607 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 9.8502ms
+2024-10-12 19:01:40.659 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.9051ms
+2024-10-12 19:01:40.731 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - null null
+2024-10-12 19:01:40.928 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 197.1787ms
+2024-10-12 19:01:45.008 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44350/api/Regions - null null
+2024-10-12 19:01:45.122 +07:00 [INF] Executing endpoint 'NZWalksAPI.Controllers.RegionsController.GetAll (NZWalksAPI)'
+2024-10-12 19:01:45.147 +07:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller NZWalksAPI.Controllers.RegionsController (NZWalksAPI).
+2024-10-12 19:01:45.564 +07:00 [ERR] This is a custom exception
+System.Exception: This is a custom exception
+   at NZWalksAPI.Controllers.RegionsController.GetAll() in D:\LUCIFER\PSU\COURSE UDEMY\RESTful Web API\NZWalks\NZWalksAPI\Controllers\RegionsController.cs:line 40
+2024-10-12 19:01:45.645 +07:00 [INF] Executed action NZWalksAPI.Controllers.RegionsController.GetAll (NZWalksAPI) in 494.4838ms
+2024-10-12 19:01:45.646 +07:00 [INF] Executed endpoint 'NZWalksAPI.Controllers.RegionsController.GetAll (NZWalksAPI)'
+2024-10-12 19:01:45.649 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: This is a custom exception
+   at NZWalksAPI.Controllers.RegionsController.GetAll() in D:\LUCIFER\PSU\COURSE UDEMY\RESTful Web API\NZWalks\NZWalksAPI\Controllers\RegionsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-12 19:01:45.663 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44350/api/Regions - 500 null text/plain; charset=utf-8 655.4457ms
